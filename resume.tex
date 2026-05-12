@@ -1,0 +1,196 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+
+\input{glyphtounicode}
+
+% Цвет заголовков (бордовый)
+\definecolor{primary}{HTML}{8B1538}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Настройки полей
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Форматирование заголовков разделов
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{primary}
+}{}{0em}{}[\color{primary}\titlerule \vspace{-5pt}]
+
+% Корректное копирование PDF
+\pdfgentounicode=1
+
+%-------------------------
+% Пользовательские команды
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  ДОКУМЕНТ  %%%%%%
+\begin{document}
+
+%----------ШАПКА----------
+\begin{center}
+    {\Huge \color{primary} Ли Виктория} \\ \vspace{6pt}
+    \small
+    \faMapMarker* \ Москва \ $|$ \
+    +7(977)476-99-69 \ $|$ \
+    \faEnvelope \ \href{mailto:w1stlyn@mail.ru}{w1stlyn@mail.ru} \ $|$ \
+    \faTelegram \ \href{https://t.me/w1stlyn}{Telegram} \ $|$ \
+    \faGithub \ \href{https://github.com/w1stlyn}{GitHub}
+\end{center}
+
+%-----------О СЕБЕ-----------
+\section{О себе}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     SAP-консультант (FI, HCM) с фокусом на аналитическую часть проектов: сбор требований, BPMN, ФС, постановка задач разработке, тестирование, вывод в прод и поддержка. Работаю с интеграциями 1С ЗУП - SAP (IDOC, XML, SOAP) и активно использую SQL для анализа. Хочу перейти на профильную позицию системного аналитика — фактически делаю эту работу сейчас как часть SAP-роли. Дополнительно — продуктовая стажировка в Тинькофф (CJM, User Story).
+    }}
+ \end{itemize}
+ 
+%-----------ОБРАЗОВАНИЕ-----------
+\section{Образование}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {Финансовый университет}{Сентябрь 2024 -- Сейчас}
+      {Информационные технологии и анализ больших данных $|$ Прикладная информатика}{Москва, Россия}
+  \resumeSubHeadingListEnd
+
+%-----------ОПЫТ РАБОТЫ-----------
+\section{Опыт работы}
+  \resumeSubHeadingListStart
+  
+    \resumeSubheading
+      {ООО "Детский мир" $|$ \textbf{SAP консультант}}{Декабрь 2025 -- Сейчас}
+      {SAP FI / CO}{Москва, Россия}
+      \resumeItemListStart
+        \resumeItem{Полный цикл по доработкам: сбор требований → анализ As-Is / To-Be → написание ФС → постановка задачи разработчику → функциональное тестирование → вывод в прод → поддержка}
+        \resumeItem{Сопровождение интеграции 1С ЗУП - SAP ERP (SAP PI/PO, IDOC HRMD, XML, FTP): загрузка оргструктуры, сотрудников, деловых партнёров по 4 юр. лицам}
+        \resumeItem{Настройка системы, функциональное тестирование}
+        \resumeItem{Написание технической документации: ФС, инструкции по поддержке}
+        \resumeItem{Моделирование бизнес-процессов в нотации BPMN}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {ООО "Витте консалтинг" $|$ \textbf{SAP консультант}}{Июль 2024 -- Декабрь 2025}
+      {SAP HCM (OM, PA, PT, PY)}{Москва, Россия}
+      \resumeItemListStart
+        \resumeItem{Участие в обследовании, изучении и оптимизации бизнес-процессов компании (GAP анализ)}
+        \resumeItem{Анализ и составление отчетности по процессам}
+        \resumeItem{Ввод в продуктивную эксплуатацию}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {ООО "Лукойл - технологии" $|$ \textbf{SAP консультант}}{Июль 2024 -- Декабрь 2025}
+      {SAP HCM (OM, PA, PT, PY)}{Москва, Россия}
+      \resumeItemListStart
+        \resumeItem{Разработка шаблонов и последующая миграция данных для сотрудников}
+        \resumeItem{Обучение пользователей и написание инструкций}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {АО "Тинькофф банк" $|$ \textbf{Стажер контент - маркетолог}}{Декабрь 2023 -- Январь 2024}
+      {Python, SQL}{Москва, Россия}
+      \resumeItemListStart
+        \resumeItem{Реализация карты пути клиента (CJM) от промо до расторжения}
+        \resumeItem{Тестирование коммуникаций}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------ДОПОЛНИТЕЛЬНО-----------
+\section{Дополнительно}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Product Sense'24} $|$ \emph{Участник}}{Сентябрь 2024}
+          \resumeItemListStart
+            \resumeItem{Крупнейшая конференция по менеджменту продуктов в России и СНГ}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Epic Growth Conference'24} $|$ \emph{Волонтер}}{Октябрь 2024}
+          \resumeItemListStart
+            \resumeItem{Главная конференция про рост продуктов}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Matemarketing'24} $|$ \emph{Волонтер}}{Ноябрь 2024}
+          \resumeItemListStart
+            \resumeItem{Большая конференция по маркетинговой и продуктовой аналитике}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------НАВЫКИ-----------
+\section{Навыки}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Языки}{: ABAP, Python, SQL(joins, агрегации, оконные функции)} \\
+     \textbf{Инструменты}{: SAP (ERP, HCM), Postman, Figma, draw.io, Git Bash, Power BI, Jira, Confluence, MS Office (Excel, Word, PowerPoint)} \\
+     \textbf{Библиотеки}{: Pandas, NumPy, Matplotlib} \\
+     \textbf{Английский язык}{: B2} \\
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
